@@ -5,8 +5,7 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
-
-name: Java CI with Maven hello
+name: Java CI with Maven
 
 on:
   push:
@@ -55,4 +54,3 @@ jobs:
       run: |
         docker build --file ./futuionsales/Dockerfile -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-    
